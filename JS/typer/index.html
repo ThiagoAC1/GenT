@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typer 3000</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <h2>⌨️ TYPER 3000 ⌨️</h2>
+      <p>Escribí la siguiente palabra:</p>
+      <h1 id="word"></h1>
+      <input type="text" id="text" autocomplete="off" placeholder="Escribe la palabra aquí..." />
+      <p class="time-container">Tiempo restante: <span id="time">10s</span></p>
+      <p class="score-container">Puntaje: <span id="score">0</span></p>
+      <button id="settings-btn">Configuraciones</button>
+      <div class="settings hide">
+        <label for="difficulty">Dificultad: </label>
+        <select id="difficulty">
+          <option value="easy">Fácil</option>
+          <option value="medium" selected>Medio</option>
+          <option value="hard">Difícil</option>
+        </select>
+      </div>
+    </div>
+    <div id="end-game-container" class="end-game-container" style="display: none;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

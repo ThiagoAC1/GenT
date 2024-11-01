@@ -1,0 +1,147 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #4CAF50;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sections */
+.dinosaur-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carnívoros */
+.carnivoros {
+    background-color: #8b0000;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carnivoros img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Herbívoros */
+.herbivoros {
+    background-color: #98fb98;
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.herbivoros img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Voladores */
+.voladores {
+    background-color: #f9c74f;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.voladores img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Acuáticos */
+.acuaticos {
+    background-color: #00bfff;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px;
+    font-style: italic;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.acuaticos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}

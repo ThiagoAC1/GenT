@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b263b;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 18px;
+}
+
+.container {
+    background-color: #2e3b55;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    width: 500px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Ligeramente más grande al hacer hover */
+}
+
+h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 0 0 30px;
+    font-size: 1.8em;
+    color: #ffcb74;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 80%;
+    padding: 14px;
+    margin-top: 15px;
+    background-color: #f4f4f9;
+    color: #2c3e50;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+.score-container, .time-container {
+    position: absolute;
+    top: 30px;
+    font-weight: bold;
+    color: #ffcb74;
+    font-size: 1.2em;
+}
+
+.score-container {
+    right: 20px;
+}
+
+.time-container {
+    left: 20px;
+}
+
+.end-game-container {
+    background-color: rgba(43, 62, 80, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: #ffcb74;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.settings {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #2e3b55;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.settings.hide {
+    display: none;
+}
+
+select {
+    width: 220px;
+    padding: 10px;
+    appearance: none;
+    border-radius: 6px;
+    background-color: #ffcb74;
+    color: #1b263b;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+select:hover {
+    background-color: #ffb347;
+    transform: scale(1.05);
+}
+
+button {
+    border: 0;
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+/* Contenedor general del puntaje y tiempo */
+.score-container, .time-container {
+    position: relative; /* Ajustar a relative para que se respeten las posiciones */
+    display: inline-block; /* Asegura que estén uno al lado del otro */
+    top: auto;
+    z-index: 2; /* Eleva la capa por encima de otros elementos */
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejor visibilidad */
+    border-radius: 5px;
+}
+
+/* Ajuste del título */
+h1 {
+    font-size: 2.5em;
+    color: #ffcb74;
+    margin: 20px 0;
+    z-index: 1; /* Asegura que el título no interfiera con los contenedores */
+    position: relative;
+    letter-spacing: 2px;
+}
+
+/* Ajustar la distancia de los contenedores de tiempo y puntaje */
+.time-container {
+    left: 0;
+    margin-right: 20px; /* Espacio adicional entre el tiempo y el puntaje */
+}
+
+.score-container {
+    right: 0;
+    margin-left: 20px;
+}
+.end-game-container {
+    display: none; /* Inicialmente oculto */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 62, 80, 0.95);
+    z-index: 2;
+    color: #ffcb74;
+    text-align: center;
+    padding: 20px;
+}

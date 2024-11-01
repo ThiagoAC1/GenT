@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones Matemáticas y FizzBuzz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Funciones Matemáticas y FizzBuzz</h1>
+
+  <div class="container">
+    <h2>Operaciones Matemáticas</h2>
+
+    <div class="math-section">
+      <h3>Triplicador</h3>
+      <label for="triplicarInput">Número a triplicar:</label>
+      <input type="number" id="triplicarInput" placeholder="Ingresa un número">
+      <button onclick="calcularTriplicador()">Triplicar</button>
+      <p id="triplicarResultado"></p>
+    </div>
+
+    <div class="math-section">
+      <h3>Multiplicador</h3>
+      <label for="multiplicadorNum1">Número 1:</label>
+      <input type="number" id="multiplicadorNum1" placeholder="Ingresa un número">
+      <label for="multiplicadorNum2">Número 2:</label>
+      <input type="number" id="multiplicadorNum2" placeholder="Ingresa otro número">
+      <button onclick="calcularMultiplicador()">Multiplicar</button>
+      <p id="multiplicadorResultado"></p>
+    </div>
+
+    <div class="math-section">
+      <h3>FizzBuzz Dinámico</h3>
+      <label for="palabra1">Palabra 1:</label>
+      <input type="text" id="palabra1" placeholder="Ingresa palabra 1">
+      <label for="palabra2">Palabra 2:</label>
+      <input type="text" id="palabra2" placeholder="Ingresa palabra 2">
+      <label for="fizzNum">Fizz Número:</label>
+      <input type="number" id="fizzNum" placeholder="Número para palabra 1">
+      <label for="buzzNum">Buzz Número:</label>
+      <input type="number" id="buzzNum" placeholder="Número para palabra 2">
+      <label for="hastaNum">Hasta:</label>
+      <input type="number" id="hastaNum" placeholder="Contar hasta...">
+      <button onclick="generarFizzBuzz()">Generar FizzBuzz</button>
+      <p id="fizzBuzzResultado"></p>
+    </div>
+  </div>
+
+  <script src="ejercicio9.js"></script>
+</body>
+</html>

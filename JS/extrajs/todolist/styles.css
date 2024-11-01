@@ -1,0 +1,79 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #12486B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+.input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 450px;
+    height: 50px;
+    margin: 5px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+}
+
+.boton-agregar {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 6, 46);
+    color: white;
+    font-size: 20px;
+}
+
+.boton-agregar:hover {
+    opacity: 0.9;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.item-input {
+    width: 350px;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    background: none;
+    outline: none;
+}
+
+.boton-editar {
+    margin: 0 5px;
+    border: none;
+    background: none;
+    color: #62d0ff;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.boton-remover {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 6, 46);
+    color: white;
+    font-size: 20px;
+}
