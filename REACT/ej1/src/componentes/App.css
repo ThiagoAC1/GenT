@@ -1,0 +1,80 @@
+/* src/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+p {
+  color: #34495e;
+}
+
+div {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  position: relative; /* Asegúrate de que no sea absoluto o fijo */
+  z-index: 1; /* Esto previene que cubra otros elementos */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #34495e;
+  color: white;
+  position: relative; /* Asegúrate de que el footer no cubra contenido */
+  z-index: 1; /* Se asegura de que quede debajo de otros elementos visibles */
+  width: 100%;
+  bottom: 0;
+}
+
+.elemento-oscuro {
+  visibility: hidden; /* Oculta cualquier bloque oscuro que esté interfiriendo */
+}
+
+@media (max-width: 600px) {
+  div {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

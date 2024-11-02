@@ -1,0 +1,9 @@
+.product-list.light .product-item {
+  background-color: #fff;
+  color: #000;
+}
+
+.product-list.dark .product-item {
+  background-color: #333;
+  color: #fff;
+}
