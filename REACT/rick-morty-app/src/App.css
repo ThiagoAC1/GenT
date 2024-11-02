@@ -1,0 +1,40 @@
+/* Centrando todo el contenido */
+.App {
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f486;
+  min-height: 100vh;
+}
+
+/* Ajustes a la cuadrícula de personajes */
+.ui.grid {
+  margin-top: 20px;
+}
+
+.ui.card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ui.card:hover {
+  transform: scale(1.05);
+}
+
+/* Detalles del personaje */
+.character-detail {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón para regresar a la lista */
+.ui.primary.button {
+  margin-bottom: 20px;
+}
+
+/* Segmento de detalles del personaje */
+.ui.segment {
+  max-width: 600px;
+  margin: 0 auto;
+}
